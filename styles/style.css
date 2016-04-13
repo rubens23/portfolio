@@ -1,0 +1,10 @@
+/* Color Scheme: Salmon on Ice https://color.adobe.com/Salmon-on-Ice-color-theme-2291686/ */
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700);
+main {
+  background-color: #3E454C;
+  color: #FFF6E5;
+}
+
+header p{
+  font-family: 'vollkorn', sans-serif;
+}
