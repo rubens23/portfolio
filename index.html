@@ -6,37 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script id="portfolio-template" type= "text/x-handlebars-template">
+      <section data-portfolio="{{title}}">
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        <p>{{{siteLink}}}</p>
+        <p>{{{githubLink}}}</p>
+      </section>
+    </script>
   </head>
   <body>
     <header>
-    <div class="background-overlay">
+    <section class="background-overlay">
       <!-- <img alt="tall-trees" width="100%"/> -->
-    </div>
-    <div class="name-title">
+    </section>
+    <section class="name-title">
       <h1>Rashid Baset</h1>
       <h2>Full Stack Developer | Code Fellows Alumni</h2>
-    </div>
+    </section>
       <button>VIEW PROJECTS</button>
     </header>
     <main>
-        <div class= "about-me">
+      <section id="portfolio"></section>
+      <!-- <section id="portfolios"> </section>
+        <section class= "about-me">
           <p class="project-title">About Me</p>
-        </div>
+        <section>
 
-        <div class="pizza-odyssey">
+        <section class="pizza-odyssey">
           <p class="project-title">Pizza Odyssey</p>
-        </div>
+        </section>
 
-        <div class="bus-mall">
+        <section class="bus-mall">
           <p class="project-title">Bus Mall</p>
-        </div>
+        </section>
 
-        <div class="hacker-hangout">
+        <section class="hacker-hangout">
           <p class="project-title">Hacker Hangout</p>
-        </div>
+        </section>
 
-        <div class="blog" data-category="blog-material">
-        </div>
+        <section class="blog" data-category="blog-material">
+        </section> -->
     </main>
     <nav class="top-nav">
       <ul>
@@ -50,6 +60,8 @@
       &copy; 2016 Rashid Baset | All rights reserved | Full-Stack Developer
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="scripts/portfolioData.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>
